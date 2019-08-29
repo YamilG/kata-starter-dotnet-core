@@ -91,9 +91,9 @@ namespace Kata.Spec
             _systemUnderTest = new Calculator();
         };
 
-        Because of = () => { _result = _systemUnderTest.Add("//;\n1;7"); };
+        Because of = () => { _result = _systemUnderTest.Add("//%\n1%7%9%8%4"); };
 
-        It should_return_the_sum_of_all_the_numbers = () => { _result.Should().Be(8); };
+        It should_return_the_sum_of_all_the_numbers = () => { _result.Should().Be(29); };
         static Calculator _systemUnderTest;
         static int _result;
     }
